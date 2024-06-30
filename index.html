@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Article Preview</title>
+		<title>ARTICLE PREVIEW</title>
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,37 +11,47 @@
 			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="script.js" defer></script>
+		<script src="/script.js" defer></script>
 	</head>
 	<body>
 		<main>
-			<div class="container">
-				<!-- try rounding the borders of the container without touching image -->
-				<img src="/images/drawers.jpg" alt="" />
-				<div class="content">
-					<h1>
-						Shift the overall look and feel by adding these wonderful touches to
-						furniture in your home
-					</h1>
-					<p>
-						Ever been in a room and felt like something was missing? Perhaps it
-						felt slightly bare and uninviting. I've got some simple tips to help
-						you make any room feel complete.
-					</p>
-					<div class="bottom">
-						<div class="profile">
-							<img src="/images/avatar-michelle.jpg" alt="Avatar of Michelle" />
-							<div class="date-container">
-								<p id="name">Michelle Appleton</p>
-								<p>26 June 2024</p>
-							</div>
-						</div>
-						<div class="share-button">
-							<img src="/images/icon-share.svg" alt="share button" />
+			<figure>
+				<img
+					src="/images/drawers.jpg"
+					alt="a green set of drawers with a mug of flowers on top"
+				/>
+			</figure>
+			<article>
+				<h1>
+					Shift the overall look and feel by adding these wonderful touches to
+					furniture in your home
+				</h1>
+				<p id="description">
+					Ever been in a room and felt like something was missing? Perhaps it
+					felt slightly bare and uninviting. I've got some simple tips to help
+					you make any room feel complete.
+				</p>
+				<div class="profile">
+					<div class="profile-info">
+						<img
+							src="/images/avatar-michelle.jpg"
+							alt="Michelle's avatar"
+							id="avatar"
+						/>
+						<div class="info">
+							<h2>Michelle Appleton</h2>
+							<span>30 JUN 2024</span>
 						</div>
 					</div>
+					<button id="share-btn"></button>
+					<div class="share">
+						<span>Share</span>
+						<img src="/images/icon-facebook.svg" alt="facebook icon" />
+						<img src="/images/icon-twitter.svg" alt="twitter icon" />
+						<img src="/images/icon-pinterest.svg" alt="pinterest icon" />
+					</div>
 				</div>
-			</div>
+			</article>
 		</main>
 	</body>
 </html>
