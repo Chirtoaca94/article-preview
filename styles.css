@@ -18,9 +18,11 @@ body {
 }
 
 main {
-	margin: 0 auto;
+	margin: 1rem auto;
 	background-color: #ffffff;
 	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
 }
 
 :root {
@@ -148,5 +150,67 @@ h2 {
 
 	100% {
 		opacity: 1;
+	}
+}
+
+@media (min-width: 769px) {
+	main {
+		flex-direction: row;
+		margin: 10rem auto;
+		max-width: 1000px;
+	}
+
+	article {
+		padding: 3rem 3.5rem 2rem 2.5rem;
+		text-align: left;
+		font-size: 0.8rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	figure img {
+		height: 100%;
+		border-bottom-left-radius: 5px;
+		border-top-right-radius: 0;
+	}
+
+	.share {
+		visibility: hidden;
+		position: absolute;
+		z-index: 10;
+		border-radius: 10px;
+		left: 25rem;
+		right: -6rem;
+		top: -5rem;
+		bottom: 5rem;
+		background: var(--Dark-Blue);
+		animation: boxUp 0.5s ease;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		box-shadow: 0 8px 8px -4px var(--Dark-Blue);
+
+		span {
+			text-transform: uppercase;
+			letter-spacing: 0.25rem;
+			font-size: 1rem;
+		}
+
+		img {
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+
+	.share::after {
+		content: "";
+		height: 20px;
+		width: 30px;
+		background-color: var(--Dark-Blue);
+		clip-path: polygon(100% 0, 0 0, 50% 100%);
+		position: absolute;
+		bottom: -1rem;
+		margin: 0 auto;
 	}
 }
