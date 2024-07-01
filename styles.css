@@ -95,7 +95,17 @@ h2 {
 	cursor: pointer;
 }
 
+#share-btn:hover {
+	background: url("/images/icon-share.svg") no-repeat center var(--Gray-Blue);
+}
+
+#share-btn:active {
+	translate: 2px 2px;
+	background: url("/images/icon-share.svg") no-repeat center var(--Gray-Blue);
+}
+
 .share {
+	visibility: hidden;
 	position: absolute;
 	background: var(--Dark-Blue);
 	left: -1.5rem;
